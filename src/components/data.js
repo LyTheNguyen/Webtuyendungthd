@@ -1,0 +1,142 @@
+const jobData = {
+  "data": [
+    {
+      "id": 11,
+      "documentId": "xz8nyu0dla91b73wlejury3g",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh Frontend",
+      "sttvitri": 2,
+      "createdAt": "2025-05-22T02:13:52.844Z",
+      "updatedAt": "2025-05-22T02:40:11.505Z",
+      "publishedAt": "2025-05-22T02:40:11.519Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Hỗ trợ đội ngũ thiết kế trong việc tư vấn và cải thiện UI/UX\nXây dựng giao diện theo thiết kế từ Figma\nThực hiện Unit Test, Intergration Test và E2E Test, viết Test theo quy trình TDD\nPhối hợp với các thành viên trong dự án để hỗ trợ khách hàng và xử lý lỗi và tối ưu hiệu suất hệ thống",
+      "yeucaucongviec": "Chuyên ngành CNTT, ATTT hoặc các ngành liên quan\nTiếng Anh giao tiếp tốt, đọc hiểu tài liệu kỹ thuật\nCó kiến thức về Responsive Design, UX/UI, TCP/IP\nThành thạo các kỹ năng: HTML, CSS, Javascript\nCó kỹ năng sử dụng thư viện ReactJS\nCó kỹ năng giải thích và trình bày vấn đề kỹ thuật",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau\nHỗ trợ trợ cấp thực tập nếu đạt được kết quả tốt trong thời gian đào tạo\nĐược tham gia các khóa huấn luyện, đào tạo nâng cao kỹ năng, nghiệp vụ từ các hãng công nghệ\nĐược học hỏi, đào tạo và tham gia vào các dự án lớn theo xu hướng công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 12,
+      "documentId": "ndnm6il5vnp8ua7sdufembft",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh Backend",
+      "sttvitri": 1,
+      "createdAt": "2025-05-22T02:11:02.630Z",
+      "updatedAt": "2025-05-22T02:41:15.219Z",
+      "publishedAt": "2025-05-22T02:41:15.229Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Phát triển và duy trì các ứng dụng backend sử dụng ngôn ngữ lập trình Go hoặc Python, đảm bảo các nguyên tắc bảo mật và mã hóa dữ liệu\nNghiên cứu cải tiến và tích hợp các giải pháp vào ứng dụng Backend\nThiết kế, triển khai và duy trì cơ sở dữ liệu hiệu quả\nTương tác chặt chẽ với đội ngũ frontend để đảm bảo tính tương thích và hiệu suất tốt nhất của hệ thống\nTối ưu hóa và cải thiện hiệu suất hệ thống theo thời gian\nTham gia vào quá trình đề xuất và thảo luận về giải pháp kỹ thuật",
+      "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Công nghệ thông tin, An toàn thông tin, Viễn thông, Mạng máy tính, An ninh mạng, Kỹ sư phần mềm\nTiếng Anh giao tiếp\nHiểu biết các khái niệm như RESTful API\nHiểu biết vững về cơ sở dữ liệu, bao gồm thiết kế, triển khai và tối ưu hóa\nHiểu biết sâu rộng về kiến trúc hệ thống (Linux, Windows) và các giao thức mạng phổ biến (TCP, UDP, ...)\nHiểu biết và áp dụng được các thuật toán trong từng yêu cầu cụ thể nhằm nâng cao hiệu suất chương trình\nSử dụng một trong các ngôn ngữ: Python, Golang",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau\nHỗ trợ trợ cấp thực tập nếu đạt được kết quả tốt trong thời gian đào tạo\nĐược tham gia các khóa huấn luyện, đào tạo nâng cao kỹ năng, nghiệp vụ từ các hãng công nghệ\nĐược học hỏi, đào tạo và tham gia vào các dự án lớn theo xu hướng công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 13,
+      "documentId": "x7sbvjfcrvk54rl816lff7t9",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh Mobile Developer",
+      "sttvitri": 3,
+      "createdAt": "2025-05-22T02:14:21.368Z",
+      "updatedAt": "2025-05-22T02:42:07.552Z",
+      "publishedAt": "2025-05-22T02:42:07.558Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tạo các thư viện và mã có thể tái sử dụng, bao gồm cả React React Native SDK để tăng cường hiệu suất ứng dụng.\nPhối hợp với Product Team (Backend, Product Manager, UI/UX Design) để tạo ra những tính năng mới hoặc cải thiện các tính năng đã có.\nKết nối mobile app với backend và các bên thứ ba liên quan.\nKhắc phục sự cố khi có lỗi xảy liên quan các tính năng được giao phụ trách.\nViết tài liệu kỹ thuật những tính năng được giao phụ trách.\nTham gia cùng đội ngũ phát triển sản phẩm ERP, CRM nội bộ công ty.",
+      "yeucaucongviec": "Ngành công nghệ thông tin, khoa học máy tính và các ngành liên quan\nTiếng Anh giao tiếp tốt, đọc hiểu tài liệu kỹ thuật\nJavascript hoặc Typescript\nKinh nghiệm về React Native\nKinh nghiệm làm việc với Git, lập trình RESTFUL API\nKinh nghiệm liên quan đến ReactJS, Redux",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau\nHỗ trợ trợ cấp thực tập nếu đạt được kết quả tốt trong thời gian đào tạo\nĐược tham gia các khóa huấn luyện, đào tạo nâng cao kỹ năng, nghiệp vụ từ các hãng công nghệ\nĐược học hỏi, đào tạo và tham gia vào các dự án lớn theo xu hướng công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 14,
+      "documentId": "bw93qsdu2nf7kae397m1dola",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh An toàn thông tin",
+      "sttvitri": 4,
+      "createdAt": "2025-05-22T02:14:49.446Z",
+      "updatedAt": "2025-05-22T02:43:32.409Z",
+      "publishedAt": "2025-05-22T02:43:32.417Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Giám sát, điều tra, phân tích các sự kiện bất thường liên quan đến an toàn thông tin\nPhát hiện, cảnh báo, xử lý các tấn công mạng và lỗ hổng bảo mật\nTriển khai, vận hành các hệ thống an toàn thông tin: SIEM, SOAR, EDR, Threat Intelligence,...\nNghiên cứu, xây dựng và thử nghiệm các giải pháp bảo mật\nXây dựng cảnh báo, báo cáo xử lý sự cố\nLàm việc theo nhóm theo sự phân công của quản lý",
+      "yeucaucongviec": "Sinh viên năm 3 hoặc năm 4 các trường đại học chuyên ngành CNTT, An toàn thông tin\nTiếng Anh giao tiếp, đọc hiểu tài liệu kỹ thuật\nNắm rõ kiến thức về mạng máy tính\nHiểu cách hoạt động của hệ điều hành (Windows, Linux)\nCó hiểu biết về an toàn thông tin (khái niệm, framework tấn công và phòng thủ)\nKhả năng tự học\nQuản lý thời gian cá nhân\nTư duy phản biện\nTư duy giải quyết vấn đề",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, du lịch, team building hàng quý\nThưởng từ các dự án, trà chiều, quà lễ Tết,...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập\nMôi trường làm việc thân thiện, năng động\nLàm việc với các doanh nghiệp trong và ngoài nước\nHỗ trợ trợ cấp thực tập nếu kết quả đào tạo tốt\nĐược đào tạo nâng cao kỹ năng, nghiệp vụ\nTham gia các dự án lớn về Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 16,
+      "documentId": "up4i4m64x52epocxpc26eavl",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh Giải pháp an toàn thông tin",
+      "sttvitri": 5,
+      "createdAt": "2025-05-22T02:44:46.852Z",
+      "updatedAt": "2025-05-22T02:44:47.561Z",
+      "publishedAt": "2025-05-22T02:44:47.569Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tham gia triển khai và duy trì các giải pháp an toàn thông tin\nTham gia phân tích rủi ro an ninh và đề xuất biện pháp giảm thiểu và cải thiện chính sách bảo mật\nTham gia vào các dự án cải tiến an ninh thông tin\nHỗ trợ trong việc xác minh, kiểm tra và vận hành các hệ thống an ninh thông tin",
+      "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Công nghệ thông tin, An toàn thông tin, Viễn thông\nTiếng Anh giao tiếp, đọc hiểu tài liệu kỹ thuật\nHiểu biết cơ bản về các nguyên tắc và thực hành an toàn thông tin\nCó kinh nghiệm làm việc với các hệ điều hành phổ thông như Linux, Windows\nCó kiến thức cơ bản về CCNA, mô hình OSI, TCP/IP, giao thức TCP/IP, giao thức định tuyến\nKỹ năng giải quyết vấn đề, tư duy phân tích và làm việc nhóm tốt\nCó khả năng làm việc độc lập và tổ chức công việc hiệu quả\nCó khả năng tiếp thu, học hỏi tốt, chủ động trong công việc, nghiên cứu các tài liệu bằng tiếng Anh",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau\nHỗ trợ trợ cấp thực tập nếu đạt được kết quả tốt trong thời gian đào tạo\nĐược tham gia các khóa huấn luyện, đào tạo nâng cao kỹ năng, nghiệp vụ từ các hãng công nghệ\nĐược học hỏi, đào tạo và tham gia vào các dự án lớn theo xu hướng công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 18,
+      "documentId": "vbnwmum65zk5lppig3tkpk6b",
+      "loaivitri": "Khối Kinh Doanh",
+      "tenvitri": "Thực tập sinh Phát triển đối tác",
+      "sttvitri": 6,
+      "createdAt": "2025-05-22T02:46:37.769Z",
+      "updatedAt": "2025-05-22T02:46:37.769Z",
+      "publishedAt": "2025-05-22T02:46:37.777Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tham gia nghiên cứu và phân tích thị trường để hiểu rõ hơn về các cơ hội hợp tác và mối quan hệ đối tác tiềm năng\nHỗ trợ trong việc phát triển và duy trì mối quan hệ với các đối tác chiến lược của công ty\nTham gia vào các cuộc họp, buổi hội thảo và sự kiện liên quan để xây dựng và duy trì mối quan hệ với đối tác\nHỗ trợ đóng góp ý kiến và đề xuất các chiến lược mới để cải thiện hiệu suất phát triển đối tác của công ty\nHỗ trợ lập kế hoạch và triển khai các hoạt động giao tiếp và tiếp thị để tăng cường nhận diện thương hiệu và tạo ra sự quan tâm từ phía đối tác\nHỗ trợ chuẩn bị tài liệu và báo cáo liên quan đến hoạt động phát triển đối tác",
+      "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Quản trị kinh doanh, Marketing, Kinh doanh quốc tế hoặc các ngành liên quan\nTiếng Anh Ielts 6.5/ Toeic 700+\nCó khả năng đàm phán, giao tiếp trực tiếp hoặc qua điện thoại tốt\nKỹ năng giao tiếp tốt, khả năng làm việc nhóm và giải quyết vấn đề\nSự chủ động, tự tin và có khả năng làm việc độc lập\nCó tinh thần cầu tiến, làm việc nhóm tốt, kiên trì trong công việc và sẵn lòng học hỏi và thích thách thức, đam mê nghiên cứu trong lĩnh vực bảo mật\nKỹ năng đọc và xây dựng báo cáo",
+      "quyenloi": "Tham gia đá bóng, game, du lịch, team building\nNhận thưởng dự án, trà chiều, quà lễ Tết\nHỗ trợ đóng dấu thực tập, thi chứng chỉ (nếu có)\nCơ hội thành nhân viên chính thức không cần sơ tuyển, thử việc\nMôi trường làm việc thân thiện, năng động\nLàm việc với doanh nghiệp, tập đoàn trong và ngoài nước\nHỗ trợ trợ cấp thực tập theo kết quả đào tạo\nTham gia đào tạo nâng cao kỹ năng từ các hãng công nghệ\nHọc hỏi, tham gia dự án công nghệ 4.0 trong nhiều lĩnh vực",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 20,
+      "documentId": "lj8bmttc1mhfk57c0ilkqc3l",
+      "loaivitri": "Kiểm Soát Nội Bộ",
+      "tenvitri": "Thực tập sinh Quản trị dự án",
+      "sttvitri": 7,
+      "createdAt": "2025-05-22T02:48:12.725Z",
+      "updatedAt": "2025-05-22T02:48:12.725Z",
+      "publishedAt": "2025-05-22T02:48:12.732Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tham gia điều phối tổng thể các hoạt động của dự án\nPhân tích yêu cầu, thiết kế giải pháp hệ thống\nLập kế hoạch và triển khai dự án từ đầu đến cuối\nQuản lý tiến độ, phạm vi và thay đổi của dự án\nBáo cáo tiến độ, chất lượng và các vấn đề phát sinh\nQuản lý giấy tờ, tài liệu và hồ sơ dự án\nTham gia đào tạo giải pháp an toàn thông tin, kiến thức quản trị dự án\nBáo cáo định kỳ: hàng tuần, đột xuất theo yêu cầu\nThực hiện các nhiệm vụ khác do quản lý giao",
+      "yeucaucongviec": "Sinh viên thuộc các ngành: CNTT, Hệ thống thông tin quản lý, Quản trị dự án...\nTiếng Anh đọc hiểu tài liệu chuyên ngành, giao tiếp tốt\nHiểu các quy trình lập kế hoạch, triển khai, giám sát và đánh giá dự án\nBiết nhận diện rủi ro, đề xuất giải pháp và theo dõi tiến độ dự án\nBiết thu thập và phân tích dữ liệu, lập báo cáo tiến độ\nBiết phối hợp làm việc nhóm và giao tiếp nội bộ hiệu quả\nKhả năng làm việc độc lập, nghiên cứu, chịu áp lực tốt\nTinh thần trách nhiệm cao, linh hoạt về thời gian\nƯu tiên có kinh nghiệm triển khai dự án HRM, Security\nGiới tính: Không yêu cầu (Ưu tiên nữ)",
+      "quyenloi": "Tham gia đá bóng, chơi game, team, du lịch và team building hàng quý\nNhận thưởng từ các dự án, trà chiều, quà tặng dịp lễ, Tết\nHỗ trợ đóng dấu mộc thực tập, thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức không cần qua sơ tuyển, thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước\nHỗ trợ trợ cấp thực tập nếu đạt kết quả tốt trong đào tạo\nĐược tham gia các khóa đào tạo từ các hãng công nghệ\nTham gia dự án công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế, SmartCity, Doanh nghiệp, Ngân hàng",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 22,
+      "documentId": "vqodope3ndawxpi7p5sdq8s0",
+      "loaivitri": "Khối kỹ thuật",
+      "tenvitri": "Thực tập sinh UI",
+      "sttvitri": 8,
+      "createdAt": "2025-05-22T02:49:17.968Z",
+      "updatedAt": "2025-05-22T02:49:17.968Z",
+      "publishedAt": "2025-05-22T02:49:17.976Z",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Thu thập và đánh giá yêu cầu người dùng: Phối hợp với Product Manager để thu thập yêu cầu về màu sắc, phông chữ, theme, v.v.\nPhát triển prototype: Thiết kế wireframe và prototype đáp ứng yêu cầu của khách hàng.\nPhối hợp với đội kỹ sư để đảm bảo tính khả thi của thiết kế.\nĐóng góp ý kiến và cải tiến quy trình thiết kế cho phòng ban.\nThực hiện các công việc phát sinh theo yêu cầu của cấp quản lý.",
+      "yeucaucongviec": "Chuyên ngành có liên quan tới Thiết kế, Công nghệ thông tin, Mỹ thuật, Đa phương tiện, Ứng dụng máy tính, Thiết kế sản phẩm\nTiếng Anh giao tiếp tốt, có thể đọc hiểu tài liệu kỹ thuật\nKiến thức về nguyên tắc thiết kế, và khả năng đánh giá, viết tài liệu thiết kế\nKiến thức cơ bản về lập trình web/app, hành vi người dùng khi sử dụng web/app\nBiết sử dụng 1 trong các công cụ Figma, Photoshop, AI hoặc Canva\nCó thái độ chủ động, tự học trong công việc\nLàm việc trong môi trường áp lực cao về tiến độ\nKhả năng tưởng tượng, sáng tạo và tư duy logic",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau\nHỗ trợ trợ cấp thực tập nếu đạt được kết quả tốt trong thời gian đào tạo\nĐược tham gia các khóa huấn luyện, đào tạo nâng cao kỹ năng, nghiệp vụ từ các hãng công nghệ\nĐược học hỏi, đào tạo và tham gia vào các dự án lớn theo xu hướng công nghệ 4.0 trong các lĩnh vực Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 8
+    }
+  }
+};
+
+export default jobData;

@@ -1,0 +1,527 @@
+@import './typography.css';
+
+:root {
+  --primary-color: #e60000;
+  --primary-hover: #cc0000;
+  --secondary-color: #333333;
+  --background-light: #f8f9fa;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+}
+
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.6;
+  color: var(--gray-800);
+  background-color: var(--gray-100);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+}
+
+/* Header Styles */
+header .navbar-brand img {
+  max-height: 50px;
+}
+
+header .nav-link {
+  color: var(--gray-800);
+  font-weight: 500;
+  font-size: var(--font-size-base);
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
+header .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #d0e4f5 0%, #a3c9ea 100%);
+  padding: 3rem 0;
+  width: 1500px;
+  height: 633px;
+}
+
+.hero .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: 
+    linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03)) 0 0,
+    linear-gradient(45deg, rgba(0,0,0,0.03) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.03) 75%, rgba(0,0,0,0.03)) 10px 10px;
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: var(--gray-900);
+}
+
+.hero p {
+  font-size: var(--font-size-base);
+  color: var(--gray-700);
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-box .form-control {
+  height: 50px;
+  font-size: 1rem;
+  border: none;
+  box-shadow: none;
+  padding-left: 1rem;
+}
+
+.search-box .btn {
+  height: 50px;
+  min-width: 120px;
+  font-weight: 500;
+}
+
+/* Job Categories */
+.jobs-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.job-filter-tabs {
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+
+.job-filter-tabs .nav-link {
+  color: var(--gray-800);
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.job-filter-tabs .nav-link.active {
+  color: var(--primary-color);
+  background: none;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.job-item {
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 1.25rem;
+  height: 100%;
+  background-color: var(--white);
+}
+
+.job-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.job-item h5 {
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.job-meta {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+.job-category {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--gray-700);
+}
+
+/* Why Choose THD */
+.why-choose-thd {
+  background-color: var(--primary-color);
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  margin-top: 3rem;
+}
+
+.why-choose-thd::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: 
+    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1)) 0 0,
+    linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1)) 10px 10px;
+  background-size: 20px 20px;
+  opacity: 0.1;
+}
+
+.why-choose-thd h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.why-choose-thd .lead {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.benefit-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+/* Recruitment Process */
+.recruitment-process {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.recruitment-process h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--gray-900);
+}
+
+.process-step {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.process-step h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.process-step img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Recruitment Process */
+.recruitment-image-placeholder {
+  height: 200px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.recruitment-image-placeholder:hover {
+  background-color: rgba(230, 0, 0, 0.1);
+}
+
+/* FAQ Section */
+.faq {
+  padding: 4rem 0;
+  background-color: var(--gray-100);
+}
+
+.faq h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: rgba(230,0,0,0.05);
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  border-color: rgba(230,0,0,0.25);
+  box-shadow: 0 0 0 0.25rem rgba(230,0,0,0.25);
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  border-radius: 8px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--white);
+  padding: 3rem 0 1rem;
+  margin-top: auto;
+  font-size: var(--font-size-base);
+}
+
+.footer-title {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+  color: var(--gray-900);
+  font-size: var(--font-size-lg);
+}
+
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-address {
+  margin-bottom: 1.5rem;
+}
+
+.footer-address p {
+  margin-bottom: 0.5rem;
+}
+
+.certificate-box {
+  background: white;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  transition: transform 0.2s;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.certificate-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.certificate-box img {
+  max-width: 100%;
+  height: 80px;
+}
+
+.copyright {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 0, 0, 0.2);
+}
+
+.btn-danger {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 0, 0, 0.2);
+}
+
+.btn-outline-danger {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 0, 0, 0.2);
+}
+
+/* Job List Styles */
+.hover-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  border-color: var(--primary-color);
+}
+
+.hover-card .btn-outline-danger {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover .btn-outline-danger {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .job-filter-tabs .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-base);
+  }
+  
+  .process-step img {
+    height: 120px;
+  }
+  
+  .why-choose-thd {
+    text-align: center;
+  }
+  
+  .benefit-item {
+    justify-content: center;
+  }
+}
+
+/* Footer Styles */
+.footer .company-info {
+  font-size: var(--font-size-base);
+}
+
+.certificate-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.certificate-box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-badge {
+  transition: transform 0.3s ease;
+}
+
+.certification-badge:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Info Styles */
+.contact-info {
+  margin-top: 8px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--gray-600);
+}
+
+.contact-info div svg {
+  margin-right: 8px;
+  color: var(--primary-color);
+} 

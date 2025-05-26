@@ -1,0 +1,52 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #fcfcfd;
+}
+
+/* Custom styles for form elements */
+.form-control:focus,
+.form-select:focus {
+  border-color: #FF0000;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25);
+}
+
+.btn-danger {
+  background-color: #FF0000;
+  border-color: #FF0000;
+}
+
+.btn-danger:hover {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+
+/* Custom styles for job cards */
+.job-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Custom styles for dropdown */
+.dropdown-item:active {
+  background-color: #FF0000;
+}
+
+/* Custom styles for links */
+a {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cc0000;
+  text-decoration: none;
+} 

@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "id": 11,
+      "tenvitri": "Thực tập sinh Frontend",
+      "loaivitri": "Khối kỹ thuật",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Hỗ trợ đội ngũ thiết kế trong việc tư vấn và cải thiện UI/UX\nXây dựng giao diện theo thiết kế từ Figma\nThực hiện Unit Test, Intergration Test và E2E Test, viết Test theo quy trình TDD\nPhối hợp với các thành viên trong dự án để hỗ trợ khách hàng và xử lý lỗi và tối ưu hiệu suất hệ thống",
+      "yeucaucongviec": "Chuyên ngành CNTT, ATTT hoặc các ngành liên quan\nTiếng Anh giao tiếp tốt, đọc hiểu tài liệu kỹ thuật\nCó kiến thức về Responsive Design, UX/UI, TCP/IP\nThành thạo các kỹ năng: HTML, CSS, Javascript\nCó kỹ năng sử dụng thư viện ReactJS\nCó kỹ năng giải thích và trình bày vấn đề kỹ thuật",
+      "quyenloi": "Tham gia các hoạt động vui chơi: đá bóng, chơi game, team, du lịch và team building\nNhận thưởng từ các dự án, quà tặng mỗi dịp lễ, Tết...\nHỗ trợ đóng dấu mộc thực tập\nHỗ trợ thi chứng chỉ (nếu có)\nCơ hội trở thành nhân viên chính thức sau kỳ thực tập mà không cần phải qua vòng sơ tuyển và thời gian thử việc\nMôi trường làm việc thân thiện, năng động\nĐược làm việc với các doanh nghiệp, tập đoàn trong và ngoài nước ở nhiều lĩnh vực khác nhau",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 12,
+      "tenvitri": "Thực tập sinh Backend",
+      "loaivitri": "Khối kỹ thuật",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Phát triển và duy trì các ứng dụng backend sử dụng ngôn ngữ lập trình Go hoặc Python, đảm bảo các nguyên tắc bảo mật và mã hóa dữ liệu\nNghiên cứu cải tiến và tích hợp các giải pháp vào ứng dụng Backend\nThiết kế, triển khai và duy trì cơ sở dữ liệu hiệu quả\nTương tác chặt chẽ với đội ngũ frontend để đảm bảo tính tương thích và hiệu suất tốt nhất của hệ thống\nTối ưu hóa và cải thiện hiệu suất hệ thống theo thời gian\nTham gia vào quá trình đề xuất và thảo luận về giải pháp kỹ thuật",
+      "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Công nghệ thông tin, An toàn thông tin, Viễn thông, Mạng máy tính, An ninh mạng, Kỹ sư phần mềm\nTiếng Anh giao tiếp\nHiểu biết các khái niệm như RESTful API\nHiểu biết vững về cơ sở dữ liệu, bao gồm thiết kế, triển khai và tối ưu hóa\nHiểu biết sâu rộng về kiến trúc hệ thống (Linux, Windows) và các giao thức mạng phổ biến (TCP, UDP, ...)\nHiểu biết và áp dụng được các thuật toán trong từng yêu cầu cụ thể nhằm nâng cao hiệu suất chương trình\nSử dụng một trong các ngôn ngữ: Python, Golang",
+      "quyenloi": "Môi trường làm việc thân thiện, năng động\nĐược đào tạo bởi đội ngũ kỹ thuật giàu kinh nghiệm\nCơ hội phát triển sự nghiệp\nLương thưởng hấp dẫn",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 13,
+      "tenvitri": "Thực tập sinh Mobile Developer",
+      "loaivitri": "Khối kỹ thuật",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tạo các thư viện và mã có thể tái sử dụng, bao gồm cả React React Native SDK để tăng cường hiệu suất ứng dụng.\nPhối hợp với Product Team (Backend, Product Manager, UI/UX Design) để tạo ra những tính năng mới hoặc cải thiện các tính năng đã có.\nKết nối mobile app với backend và các bên thứ ba liên quan.\nKhắc phục sự cố khi có lỗi xảy liên quan các tính năng được giao phụ trách.\nViết tài liệu kỹ thuật những tính năng được giao phụ trách.\nTham gia cùng đội ngũ phát triển sản phẩm ERP, CRM nội bộ công ty.",
+      "yeucaucongviec": "Ngành công nghệ thông tin, khoa học máy tính và các ngành liên quan\nTiếng Anh giao tiếp tốt, đọc hiểu tài liệu kỹ thuật\nJavascript hoặc Typescript\nKinh nghiệm về React Native\nKinh nghiệm làm việc với Git, lập trình RESTFUL API\nKinh nghiệm liên quan đến ReactJS, Redux",
+      "quyenloi": "Môi trường làm việc năng động\nĐược đào tạo chuyên sâu\nCơ hội thăng tiến\nChế độ đãi ngộ tốt",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 14,
+      "tenvitri": "Thực tập sinh An toàn thông tin",
+      "loaivitri": "Khối kỹ thuật",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Giám sát, điều tra, phân tích các sự kiện bất thường liên quan đến an toàn thông tin\nPhát hiện, cảnh báo, xử lý các tấn công mạng và lỗ hổng bảo mật\nTriển khai, vận hành các hệ thống an toàn thông tin: SIEM, SOAR, EDR, Threat Intelligence,...\nNghiên cứu, xây dựng và thử nghiệm các giải pháp bảo mật\nXây dựng cảnh báo, báo cáo xử lý sự cố\nLàm việc theo nhóm theo sự phân công của quản lý",
+      "yeucaucongviec": "Sinh viên năm 3 hoặc năm 4 các trường đại học chuyên ngành CNTT, An toàn thông tin\nTiếng Anh giao tiếp, đọc hiểu tài liệu kỹ thuật\nNắm rõ kiến thức về mạng máy tính\nHiểu cách hoạt động của hệ điều hành (Windows, Linux)\nCó hiểu biết về an toàn thông tin (khái niệm, framework tấn công và phòng thủ)\nKhả năng tự học\nQuản lý thời gian cá nhân\nTư duy phản biện\nTư duy giải quyết vấn đề",
+      "quyenloi": "Môi trường làm việc thân thiện, năng động\nĐược đào tạo bởi đội ngũ chuyên gia\nCơ hội phát triển sự nghiệp\nChế độ đãi ngộ tốt",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 16,
+      "tenvitri": "Thực tập sinh Giải pháp an toàn thông tin",
+      "loaivitri": "Khối kỹ thuật",
+      "diachi": "Hồ Chí Minh",
+      "thoigianlamviec": "Fulltime",
+      "motacongviec": "Tham gia triển khai và duy trì các giải pháp an toàn thông tin\nTham gia phân tích rủi ro an ninh và đề xuất biện pháp giảm thiểu và cải thiện chính sách bảo mật\nTham gia vào các dự án cải tiến an ninh thông tin\nHỗ trợ trong việc xác minh, kiểm tra và vận hành các hệ thống an ninh thông tin",
+      "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Công nghệ thông tin, An toàn thông tin, Viễn thông\nTiếng Anh giao tiếp, đọc hiểu tài liệu kỹ thuật\nHiểu biết cơ bản về các nguyên tắc và thực hành an toàn thông tin\nCó kinh nghiệm làm việc với các hệ điều hành phổ thông như Linux, Windows\nCó kiến thức cơ bản về CCNA, mô hình OSI, TCP/IP, giao thức TCP/IP, giao thức định tuyến\nKỹ năng giải quyết vấn đề, tư duy phân tích và làm việc nhóm tốt\nCó khả năng làm việc độc lập và tổ chức công việc hiệu quả\nCó khả năng tiếp thu, học hỏi tốt, chủ động trong công việc, nghiên cứu các tài liệu bằng tiếng Anh",
+      "quyenloi": "Môi trường làm việc thân thiện, năng động\nĐược đào tạo bởi đội ngũ chuyên gia\nCơ hội phát triển sự nghiệp\nChế độ đãi ngộ tốt",
+      "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    }
+  ]
+} 
