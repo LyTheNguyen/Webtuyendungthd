@@ -64,9 +64,4 @@ export const fetchJobDetails = async (id) => {
     
     throw error;
   }
-};
-
-export default {
-  fetchJobs,
-  fetchJobDetails
 }; 
