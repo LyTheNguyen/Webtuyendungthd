@@ -44,10 +44,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
-              <Nav.Link as={Link} to="#" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }} onClick={e => e.preventDefault()}>Về THD</Nav.Link>
+              <Nav.Link as={Link} to="/" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }}>Về THD</Nav.Link>
               <Nav.Link as={Link} to="/jobs" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }}>Cơ hội việc làm</Nav.Link>
-              <Nav.Link as={Link} to="#" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }} onClick={e => e.preventDefault()}>THD Talent</Nav.Link>
-              <Nav.Link as={Link} to="#" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }} onClick={e => e.preventDefault()}>Life At THD</Nav.Link>
+              {/* <Nav.Link as={Link} to="#" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }} onClick={e => e.preventDefault()}>THD Talent</Nav.Link>
+              <Nav.Link as={Link} to="#" className="mx-2" style={{ fontSize: 'var(--font-size-base)' }} onClick={e => e.preventDefault()}>Life At THD</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

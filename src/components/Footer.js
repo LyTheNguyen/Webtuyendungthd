@@ -29,13 +29,13 @@ const Footer = () => {
           <Row className="mb-4">
             {/* Trụ sở chính */}
             <Col md={4}>
-              <div style={{ fontWeight: 600, marginBottom: 12, fontSize: 'var(--font-size-lg)' }}>Trụ sở chính</div>
+              <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '16px' }}>Trụ sở chính</div>
               <div className="contact-info">
-                <div style={{ fontSize: 'var(--font-size-base)' }}>
+                <div style={{ fontSize: '14px' }}>
                   <FaEnvelope className="me-2" />
                   sales@thdcybersecurity.com
                 </div>
-                <div style={{ fontSize: 'var(--font-size-base)' }}>
+                <div style={{ fontSize: '14px' }}>
                   <FaPhone className="me-2" />
                   0853 287 799
                 </div>
@@ -43,9 +43,9 @@ const Footer = () => {
             </Col>
             {/* Chi nhánh */}
             <Col md={8}>
-              <div style={{ fontWeight: 600, marginBottom: 12, fontSize: 'var(--font-size-lg)' }}>Chi nhánh</div>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
-                <li style={{ marginBottom: 6 }}>Hồ Chí Minh: Tòa nhà Ereka, 17 Hồ Bá Kiện, Phường 15, Quận 10, Tp.HCM, Việt Nam</li>
+              <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '16px' }}>Chi nhánh</div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e0e0e0', fontSize: '14px' }}>
+                <li style={{ marginBottom: 6 }}>Trụ sở chính: 60 Nguyễn Văn Thủ, Phương Đa Kao, Quận 1, TP.Hồ Chí Minh</li>
                 <li style={{ marginBottom: 6 }}>Gia Lai: Lô 10-1 Phù Đổng Hoa Lư, Phường Phù Đổng, Tp. Pleiku, Gia Lai, Việt Nam.</li>
                 <li style={{ marginBottom: 6 }}>Cần Thơ: Số 7A2 Đường Bùi Quang Trinh, KDC Phú An, Phường Phú Thứ, Quận Cái Răng, Tp. Cần Thơ, Việt Nam.</li>
                 <li>Hà Nội: Tầng 8, Tòa nhà AC, Số 3, Ngõ 78 Duy Tân, Cầu Giấy, Tp. Hà Nội, Việt Nam.</li>
@@ -59,25 +59,16 @@ const Footer = () => {
           {/* Row for service blocks */}
           <Row>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối dịch vụ công</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối dịch vụ công</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
                 <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
                 <li>Kiểm Thử Xâm Nhập</li>
                 <li>Dịch Vụ Phòng Chống Và Tiêu Diệt Virus</li>
               </ul>
             </Col>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối ngân hàng</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
-                <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
-                <li>Kiểm Thử Xâm Nhập</li>
-                <li>Xử lý Phần Mềm Độc Hại</li>
-                <li>Dịch Vụ Phòng Chống Và Tiêu Diệt Virus</li>
-              </ul>
-            </Col>
-            <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối tài chính</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối ngân hàng</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
                 <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
                 <li>Kiểm Thử Xâm Nhập</li>
                 <li>Xử lý Phần Mềm Độc Hại</li>
@@ -85,8 +76,8 @@ const Footer = () => {
               </ul>
             </Col>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối y tế</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối tài chính</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
                 <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
                 <li>Kiểm Thử Xâm Nhập</li>
                 <li>Xử lý Phần Mềm Độc Hại</li>
@@ -94,8 +85,8 @@ const Footer = () => {
               </ul>
             </Col>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối giáo dục</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối y tế</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
                 <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
                 <li>Kiểm Thử Xâm Nhập</li>
                 <li>Xử lý Phần Mềm Độc Hại</li>
@@ -103,8 +94,17 @@ const Footer = () => {
               </ul>
             </Col>
             <Col xs={6} sm={4} md={2} className="mb-3">
-              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: 'var(--font-size-lg)' }}>Khối doanh nghiệp</div>
-              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: 'var(--font-size-base)' }}>
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối giáo dục</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
+                <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
+                <li>Kiểm Thử Xâm Nhập</li>
+                <li>Xử lý Phần Mềm Độc Hại</li>
+                <li>Dịch Vụ Phòng Chống Và Tiêu Diệt Virus</li>
+              </ul>
+            </Col>
+            <Col xs={6} sm={4} md={2} className="mb-3">
+              <div style={{ fontWeight: 600, marginBottom: 8, fontSize: '16px' }}>Khối doanh nghiệp</div>
+              <ul style={{ listStyle: 'none', padding: 0, color: '#e0e0e0', fontSize: '14px' }}>
                 <li>Quản Trị Phát Hiện Và Xử Lý Sự Cố</li>
                 <li>Kiểm Thử Xâm Nhập</li>
                 <li>Xử lý Phần Mềm Độc Hại</li>
@@ -122,15 +122,15 @@ const Footer = () => {
           <Row className="align-items-center justify-content-between">
             <Col md={6} className="mb-3 mb-md-0 d-flex align-items-center">
               <img src="/images/logoden.png" alt="THD Logo" style={{ height: 48, marginRight: 16 }} />
-              <span style={{ color: '#fff', fontWeight: 600, fontSize: 'var(--font-size-base)', whiteSpace: 'nowrap' }}>© 2025 THD Cyber Security. All Rights Reserved</span>
+              <span style={{ color: '#fff', fontWeight: 600, fontSize: '14px', whiteSpace: 'nowrap' }}>© 2025 THD Cyber Security. All Rights Reserved</span>
             </Col>
             <Col md={6} className="d-flex justify-content-end align-items-center">
               <div className="d-flex align-items-center">
-                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: 'var(--font-size-base)' }}><FaFacebookF /></Link>
-                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: 'var(--font-size-base)' }}><FaLinkedinIn /></Link>
-                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: 'var(--font-size-base)' }}><FaYoutube /></Link>
-                <Link to="#" style={{ color: '#fff', marginLeft: 24, fontSize: 'var(--font-size-base)' }}>Sitemap</Link>
-                <Link to="#" style={{ color: '#fff', marginLeft: 24, fontSize: 'var(--font-size-base)' }}>Quy định sử dụng</Link>
+                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: '14px' }}><FaFacebookF /></Link>
+                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: '14px' }}><FaLinkedinIn /></Link>
+                <Link to="#" style={{ color: '#fff', margin: '0 12px', fontSize: '14px' }}><FaYoutube /></Link>
+                <Link to="#" style={{ color: '#fff', marginLeft: 24, fontSize: '14px' }}>Sitemap</Link>
+                <Link to="#" style={{ color: '#fff', marginLeft: 24, fontSize: '14px' }}>Quy định sử dụng</Link>
               </div>
             </Col>
           </Row>

@@ -168,20 +168,26 @@ const Home = () => {
               Một số vị trí thích hợp dành cho bạn có thể ở đây ngay tại đây. Khám phá nhé!
             </div>
           </div>
-          <div className="job-filter mb-4 mt-3">
-            <Nav variant="pills" className="job-filter-tabs justify-content-center" style={{ gap: '12px' }}>
+          <div className="d-flex justify-content-center mb-4">
+            <Nav style={{ gap: '16px', padding: '8px' }}>
               <Nav.Item>
-                <Nav.Link 
+                <Nav.Link
                   active={activeTab === 'all'}
                   onClick={() => setActiveTab('all')}
                   style={{
                     borderRadius: '12px',
-                    border: activeTab === 'all' ? '2px solid #FF0000' : '2px solid #222',
+                    border: activeTab === 'all' ? '1px solid #FF0000' : '1px solid #222',
                     background: activeTab === 'all' ? '#FF0000' : '#fff',
                     color: activeTab === 'all' ? '#fff' : '#222',
                     fontWeight: 600,
                     minWidth: '120px',
-                    fontSize: 'var(--font-size-base)'
+                    padding: '8px 16px',
+                    fontSize: 'var(--font-size-base)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '40px',
+                    textAlign: 'center'
                   }}
                 >
                   Mới nhất
@@ -193,12 +199,18 @@ const Home = () => {
                   onClick={() => setActiveTab('Khối kỹ thuật')}
                   style={{
                     borderRadius: '12px',
-                    border: activeTab === 'Khối kỹ thuật' ? '2px solid #FF0000' : '2px solid #222',
+                    border: activeTab === 'Khối kỹ thuật' ? '1px solid #FF0000' : '1px solid #222',
                     background: activeTab === 'Khối kỹ thuật' ? '#FF0000' : '#fff',
                     color: activeTab === 'Khối kỹ thuật' ? '#fff' : '#222',
                     fontWeight: 600,
                     minWidth: '120px',
-                    fontSize: 'var(--font-size-base)'
+                    padding: '8px 16px',
+                    fontSize: 'var(--font-size-base)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '40px',
+                    textAlign: 'center'
                   }}
                 >
                   Khối kỹ thuật
@@ -206,16 +218,22 @@ const Home = () => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link
-                  active={activeTab === 'Khối Kinh Doanh'}
-                  onClick={() => setActiveTab('Khối Kinh Doanh')}
+                  active={activeTab === 'Khối kinh doanh'}
+                  onClick={() => setActiveTab('Khối kinh doanh')}
                   style={{
                     borderRadius: '12px',
-                    border: activeTab === 'Khối Kinh Doanh' ? '2px solid #FF0000' : '2px solid #222',
-                    background: activeTab === 'Khối Kinh Doanh' ? '#FF0000' : '#fff',
-                    color: activeTab === 'Khối Kinh Doanh' ? '#fff' : '#222',
+                    border: activeTab === 'Khối kinh doanh' ? '1px solid #FF0000' : '1px solid #222',
+                    background: activeTab === 'Khối kinh doanh' ? '#FF0000' : '#fff',
+                    color: activeTab === 'Khối kinh doanh' ? '#fff' : '#222',
                     fontWeight: 600,
                     minWidth: '120px',
-                    fontSize: 'var(--font-size-base)'
+                    padding: '8px 16px',
+                    fontSize: 'var(--font-size-base)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '40px',
+                    textAlign: 'center'
                   }}
                 >
                   Khối kinh doanh
@@ -223,16 +241,22 @@ const Home = () => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link
-                  active={activeTab === 'Kiểm Soát Nội Bộ'}
-                  onClick={() => setActiveTab('Kiểm Soát Nội Bộ')}
+                  active={activeTab === 'Kiểm soát Nội Bộ'}
+                  onClick={() => setActiveTab('Kiểm soát Nội Bộ')}
                   style={{
                     borderRadius: '12px',
-                    border: activeTab === 'Kiểm Soát Nội Bộ' ? '2px solid #FF0000' : '2px solid #222',
-                    background: activeTab === 'Kiểm Soát Nội Bộ' ? '#FF0000' : '#fff',
-                    color: activeTab === 'Kiểm Soát Nội Bộ' ? '#fff' : '#222',
+                    border: activeTab === 'Kiểm soát Nội Bộ' ? '1px solid #FF0000' : '1px solid #222',
+                    background: activeTab === 'Kiểm soát Nội Bộ' ? '#FF0000' : '#fff',
+                    color: activeTab === 'Kiểm soát Nội Bộ' ? '#fff' : '#222',
                     fontWeight: 600,
                     minWidth: '120px',
-                    fontSize: 'var(--font-size-base)'
+                    padding: '8px 16px',
+                    fontSize: 'var(--font-size-base)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '40px',
+                    textAlign: 'center'
                   }}
                 >
                   Kiểm soát Nội Bộ
@@ -240,16 +264,22 @@ const Home = () => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link
-                  active={activeTab === ' Khối Backoffice'}
-                  onClick={() => setActiveTab(' Khối Backoffice')}
+                  active={activeTab === 'Khối Backoffice'}
+                  onClick={() => setActiveTab('Khối Backoffice')}
                   style={{
                     borderRadius: '12px',
-                    border: activeTab === ' Khối Backoffice' ? '2px solid #FF0000' : '2px solid #222',
-                    background: activeTab === ' Khối Backoffice' ? '#FF0000' : '#fff',
-                    color: activeTab === ' Khối Backoffice' ? '#fff' : '#222',
+                    border: activeTab === 'Khối Backoffice' ? '1px solid #FF0000' : '1px solid #222',
+                    background: activeTab === 'Khối Backoffice' ? '#FF0000' : '#fff',
+                    color: activeTab === 'Khối Backoffice' ? '#fff' : '#222',
                     fontWeight: 600,
                     minWidth: '120px',
-                    fontSize: 'var(--font-size-base)'
+                    padding: '8px 16px',
+                    fontSize: 'var(--font-size-base)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '40px',
+                    textAlign: 'center'
                   }}
                 >
                   Khối Backoffice
