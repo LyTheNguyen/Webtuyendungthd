@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Form, Button, InputGroup } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faClock, faSearch, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faClock, faSearch, faArrowLeft, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { fetchJobs } from '../services/api';
 
 const JobList = () => {
@@ -149,7 +149,7 @@ const JobList = () => {
           <h4 className="mb-4 text-center" style={{ fontSize: 'var(--font-size-lg)' }}>Vị trí đang tuyển</h4>
 
           {/* Job Grid */}
-          <Row className="g-4">
+          <Row className="g-4 align-items-stretch">
             {loading ? (
               <div className="text-center py-5 w-100">
                 <div className="spinner-border text-danger" role="status">
@@ -168,27 +168,33 @@ const JobList = () => {
               displayedJobs.map((job) => (
                 <Col key={job.id} md={6} lg={6} className="mb-2">
                   <Card className="h-100 border-0 shadow-sm hover-card">
-                    <Card.Body className="p-4">
-                      <div className="d-flex flex-column h-100">
-                        <div className="mb-2 small">
-                          <span className="me-2">
-                            <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1 text-danger" />
-                            {job.diachi}
-                          </span>
-                          <span className="text-muted">|</span>
-                          <span className="ms-2">
-                            <FontAwesomeIcon icon={faClock} className="me-1 text-danger" />
-                            {job.thoigianlamviec}
-                          </span>
-                        </div>
-                        <h5 className="mb-3" style={{ fontSize: 'var(--font-size-base)' }}>{job.tenvitri}</h5>
-                        <div className="mt-auto">
-                          <Link to={`/jobs/${job.id}`} className="text-decoration-none">
-                            <Button variant="outline-danger" size="sm" className="w-100">
-                              Xem chi tiết
-                            </Button>
-                          </Link>
-                        </div>
+                    <Card.Body className="p-4 d-flex flex-column">
+                      <div className="mb-2 small">
+                        <span className="me-2">
+                          <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" style={{ color: '#FF0000' }} />
+                          {job.diachi}
+                        </span>
+                        <span className="text-muted">|</span>
+                        <span className="ms-2">
+                          <FontAwesomeIcon icon={faClock} className="me-1" style={{ color: '#FF0000' }} />
+                          {job.thoigianlamviec}
+                        </span>
+                      </div>
+                      <h5 className="mb-3" style={{ fontSize: 'var(--font-size-base)' }}>{job.tenvitri}</h5>
+                      <div className="mt-auto">
+                        <Link to={`/jobs/${job.id}`} className="text-decoration-none">
+                          <Button
+                            size="sm"
+                            className="w-100"
+                            style={{
+                              backgroundColor: 'transparent',
+                              border: '1px solid #FF0000',
+                              color: '#FF0000'
+                            }}
+                          >
+                            Xem chi tiết
+                          </Button>
+                        </Link>
                       </div>
                     </Card.Body>
                   </Card>
@@ -214,46 +220,115 @@ const JobList = () => {
       </div>
 
       {/* Company Info Section */}
-            <div className="text-white py-5 mt-5" style={{ background: 'linear-gradient(180deg, #FF0000 0%, #000000 79%)' }}>
-              <Container>
-                <Row>
-                  <Col md={8}>
-                    <h4 className="mb-4" style={{ fontSize: 'var(--font-size-lg)' }}>Vì sao nên chọn THD?</h4>
-                    <p>Khi gia nhập THD, bạn sẽ được trải nghiệm môi trường làm việc năng động, sáng tạo cùng những phúc lợi hấp dẫn:</p>
-                    <ul className="list-unstyled">
-                      <li className="mb-2">
-                        <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                        Được đào tạo nâng cao kỹ năng, nghiệp vụ
-                      </li>
-                      <li className="mb-2"></li>
-                        <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                        Mức lương, thưởng và phúc lợi hấp dẫn
-                      </ul>
-                      <li className="mb-2">
-                        <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                        Nhiều chương trình đào tạo, phát triển bản thân và kỹ thuật thăng tiến rõ ràng
-                      </li>
-                      <li className="mb-2">
-                        <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                        Hỗ trợ thí chứng chỉ (nếu có)
-                      </li>
-                      <li className="mb-2">
-                        <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                        Tham gia các dự án lớn về Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...
-                      </li>
-                    
-                  </Col>
-                   <Col md={4} className="text-center">
-                    
-                      <img src="/images/thdvuong.jpg" 
-                      alt="THD Logo"
-                      className="img-fluid"
-                      style={{ width: '400px', height:'400px' , borderRadius:'40px'}}
-                    />
-                  </Col>
-                </Row>
-              </Container>
-            </div>
+      <div className="text-white py-5 mt-5" style={{ 
+        background: 'linear-gradient(180deg, #FF0000 0%, #000000 100%)',
+        width: '100%',
+        maxWidth: '100vw',
+        overflow: 'hidden'
+      }}>
+        <Container fluid="lg">
+          <Row className="align-items-center">
+            <Col md={8}>
+              <h2 className="mb-4 fw-bold" style={{ fontSize: 'var(--font-size-lg)' }}>Vì sao nên chọn THD?</h2>
+              <p className="mb-4" style={{ fontSize: 'var(--font-size-base)', opacity: 0.9 }}>
+                Khi gia nhập THD, bạn sẽ được trải nghiệm môi trường làm việc năng động, sáng tạo cùng những phúc lợi hấp dẫn:
+              </p>
+              <ul className="list-unstyled benefits-list" style={{ fontSize: 'var(--font-size-base)' }}>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Được đào tạo nâng cao kỹ năng, nghiệp vụ</span>
+                </li>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Mức lương, thưởng và phúc lợi hấp dẫn</span>
+                </li>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Nhiều chương trình đào tạo, phát triển bản thân và kỹ thuật thăng tiến rõ ràng</span>
+                </li>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Hỗ trợ thi chứng chỉ (nếu có)</span>
+                </li>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Tham gia các dự án lớn về Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...</span>
+                </li>
+              </ul>
+            </Col>
+            <Col md={4} className="text-center d-flex align-items-center justify-content-center">
+              <div className="position-relative" style={{
+                width: '350px',
+                height: '350px',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+              }}>
+                <img 
+                  src="/images/congnghe.jpg" 
+                  alt="THD Technology"
+                  className="img-fluid"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
 
       {/* Recruitment Process */}
       <section className="recruitment-process py-5">

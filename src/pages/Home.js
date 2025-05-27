@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button, Form, Nav, Accordion, InputGroup } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faClock, faChevronRight, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faClock, faChevronRight, faSearch, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { fetchAllJobs } from '../utils/api';
 
 const Home = () => {
@@ -126,9 +126,13 @@ const Home = () => {
                   className="py-2"
                 />
                 <Button 
-                  variant="danger" 
                   type="submit"
                   onClick={handleSearch}
+                  style={{
+                    backgroundColor: '#FF0000',
+                    border: 'none',
+                    color: '#fff'
+                  }}
                 >
                   Tìm công việc
                 </Button>
@@ -297,180 +301,144 @@ const Home = () => {
               </div>
             ) : error ? (
               <>
-                {/* Sample job frames when API is not connected */}
-                <Col md={4}>
-                  <Link to="/jobs/11" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                {/* Sample job frames when API is not connected - ĐÚNG TÊN VÀ THỨ TỰ */}
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/11" className="text-decoration-none text-dark">Thực tập sinh Frontend</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh Frontend
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col md={4}>
-                  <Link to="/jobs/12" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/12" className="text-decoration-none text-dark">Thực tập sinh Backend</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh Backend
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col md={4}>
-                  <Link to="/jobs/13" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/13" className="text-decoration-none text-dark">Thực tập sinh Mobile Developer</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh Mobile Developer
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col md={4}>
-                  <Link to="/jobs/14" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/14" className="text-decoration-none text-dark">Thực tập sinh An toàn thông tin</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh An toàn thông tin
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col md={4}>
-                  <Link to="/jobs/16" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/16" className="text-decoration-none text-dark">Thực tập sinh Giải pháp an toàn thông tin</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh Giải pháp an toàn thông tin
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
-                <Col md={4}>
-                  <Link to="/jobs/18" className="text-decoration-none">
-                    <div
-                      className="job-item p-3 bg-white rounded shadow-sm"
-                      style={{
-                        height: '220px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        padding: '15px',
-                        border: '1.5px solid #eee',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      <div className="job-meta" style={{ color: '#888', fontSize: 'var(--font-size-base)', marginBottom: '6px' }}>
-                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />
-                        Hồ Chí Minh
-                        <span style={{ marginLeft: 8 }}>
-                          | Fulltime
-                        </span>
+                <Col md={4} className="mb-4">
+                  <div className="h-100 border-0 shadow-sm" style={{ borderRadius: 16, background: '#fff', padding: 24, display: 'flex', flexDirection: 'column', minHeight: 180 }}>
+                    <div className="d-flex align-items-center mb-2">
+                      <img src="/images/thdvuong.jpg" alt="THD SECURITY" style={{ width: 40, height: 40, marginRight: 12 }} />
+                      <div>
+                        <div className="fw-bold" style={{ fontSize: 16 }}>
+                          <Link to="/jobs/18" className="text-decoration-none text-dark">Thực tập sinh Phát triển đối tác</Link>
+                        </div>
+                        <div className="text-muted" style={{ fontSize: 16 }}>THD CYBER SECURITY</div>
                       </div>
-                      <h5 className="text-danger mb-2" style={{ fontWeight: 500, fontSize: 'var(--font-size-base)' }}>
-                        Thực tập sinh Phát triển đối tác
-                      </h5>
                     </div>
-                  </Link>
+                    <div className="mt-auto pt-2">
+                      <div className="d-flex align-items-center mb-1" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" />
+                        Hồ Chí Minh
+                      </div>
+                      <div className="d-flex align-items-center" style={{ color: '#888', fontSize: 16 }}>
+                        <FontAwesomeIcon icon={faClock} className="me-2" />
+                        Fulltime
+                      </div>
+                    </div>
+                  </div>
                 </Col>
               </>
             ) : filteredJobs.length === 0 ? (
@@ -514,10 +482,17 @@ const Home = () => {
 
           <div className="text-center mt-4">
             <Button 
-              variant="danger" 
               className="px-4 py-2 fw-medium rounded-pill" 
               size="lg"
-              style={{ minWidth: '180px', fontWeight: 600, fontSize: 'var(--font-size-base)', borderRadius: '24px' }}
+              style={{ 
+                minWidth: '180px', 
+                fontWeight: 600, 
+                fontSize: 'var(--font-size-base)', 
+                borderRadius: '24px',
+                backgroundColor: '#FF0000',
+                border: 'none',
+                color: '#fff'
+              }}
               onClick={() => navigate('/jobs')}
             >
               Xem thêm
@@ -529,45 +504,110 @@ const Home = () => {
 
       {/* Company Info Section - Static Content */}
       <div className="text-white py-5 mt-5" style={{ 
-        background: 'linear-gradient(180deg, #FF0000 0%, #000000 79%)',
+        background: 'linear-gradient(180deg, #FF0000 0%, #000000 100%)',
         width: '100%',
         maxWidth: '100vw',
         overflow: 'hidden'
       }}>
         <Container fluid="lg">
-          <Row>
+          <Row className="align-items-center">
             <Col md={8}>
-              <h4 className="mb-4" style={{ fontSize: 'var(--font-size-lg)' }}>Vì sao nên chọn THD?</h4>
-              <p>Khi gia nhập THD, bạn sẽ được trải nghiệm môi trường làm việc năng động, sáng tạo cùng những phúc lợi hấp dẫn:</p>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                  Được đào tạo nâng cao kỹ năng, nghiệp vụ
+              <h2 className="mb-4 fw-bold" style={{ fontSize: 'var(--font-size-lg)' }}>Vì sao nên chọn THD?</h2>
+              <p className="mb-4" style={{ fontSize: 'var(--font-size-base)', opacity: 0.9 }}>
+                Khi gia nhập THD, bạn sẽ được trải nghiệm môi trường làm việc năng động, sáng tạo cùng những phúc lợi hấp dẫn:
+              </p>
+              <ul className="list-unstyled benefits-list" style={{ fontSize: 'var(--font-size-base)' }}>
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Được đào tạo nâng cao kỹ năng, nghiệp vụ</span>
                 </li>
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                  Mức lương, thưởng và phúc lợi hấp dẫn
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Mức lương, thưởng và phúc lợi hấp dẫn</span>
                 </li>
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                  Nhiều chương trình đào tạo, phát triển bản thân và kỹ thuật thăng tiến rõ ràng
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Nhiều chương trình đào tạo, phát triển bản thân và kỹ thuật thăng tiến rõ ràng</span>
                 </li>
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                  Hỗ trợ thí chứng chỉ (nếu có)
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Hỗ trợ thí chứng chỉ (nếu có)</span>
                 </li>
-                <li className="mb-2">
-                  <FontAwesomeIcon icon={faSearch} className="text-white me-2" />
-                  Tham gia các dự án lớn về Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...
+                <li className="mb-3 d-flex align-items-center">
+                  <div className="benefit-icon me-3" style={{ 
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: '#fff' }} />
+                  </div>
+                  <span>Tham gia các dự án lớn về Chính phủ, Y tế 4.0, SmartCity, Doanh nghiệp, Ngân hàng...</span>
                 </li>
               </ul>
             </Col>
-            <Col md={4} className="text-center">
-              <img src="/images/thdvuong.jpg" 
-                alt="THD Logo"
-                className="img-fluid"
-                style={{ width: '400px', height:'400px' , borderRadius:'40px'}}
-              />
+            <Col md={4} className="text-center d-flex align-items-center justify-content-center">
+              <div className="position-relative" style={{
+                width: '350px',
+                height: '350px',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
+              }}>
+                <img 
+                  src="/images/congnghe.jpg" 
+                  alt="THD Logo"
+                  className="img-fluid"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+              </div>
             </Col>
           </Row>
         </Container>

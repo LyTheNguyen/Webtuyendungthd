@@ -54,6 +54,28 @@
       "yeucaucongviec": "Sinh viên năm 3, năm 4 tại các trường đại học chuyên ngành Công nghệ thông tin, An toàn thông tin, Viễn thông\nTiếng Anh giao tiếp, đọc hiểu tài liệu kỹ thuật\nHiểu biết cơ bản về các nguyên tắc và thực hành an toàn thông tin\nCó kinh nghiệm làm việc với các hệ điều hành phổ thông như Linux, Windows\nCó kiến thức cơ bản về CCNA, mô hình OSI, TCP/IP, giao thức TCP/IP, giao thức định tuyến\nKỹ năng giải quyết vấn đề, tư duy phân tích và làm việc nhóm tốt\nCó khả năng làm việc độc lập và tổ chức công việc hiệu quả\nCó khả năng tiếp thu, học hỏi tốt, chủ động trong công việc, nghiên cứu các tài liệu bằng tiếng Anh",
       "quyenloi": "Môi trường làm việc thân thiện, năng động\nĐược đào tạo bởi đội ngũ chuyên gia\nCơ hội phát triển sự nghiệp\nChế độ đãi ngộ tốt",
       "thongtinlienhe": "Liên hệ: Trịnh Bảo Long\nEmail: jobs@thdcybersecurity.com\nSố điện thoại: (+84) 896 471 696"
+    },
+    {
+      "id": 1001,
+      "tenvitri": "Key Account Management, Thu Nhập 15-25 triệu",
+      "company": "CÔNG TY TNHH CNV HOLDINGS",
+      "logo": "/images/logo-cnv.png",
+      "salary": "15 - 25 triệu",
+      "diachi": "Hồ Chí Minh",
+      "isTop": true,
+      "isUrgent": false,
+      "isHot": false
+    },
+    {
+      "id": 1002,
+      "tenvitri": "Trưởng Dự Án Referral Marketing",
+      "company": "EDUPIA",
+      "logo": "/images/logo-edupia.png",
+      "salary": "30 - 40 triệu",
+      "diachi": "Hà Nội",
+      "isTop": true,
+      "isUrgent": false,
+      "isHot": true
     }
   ]
 } 
