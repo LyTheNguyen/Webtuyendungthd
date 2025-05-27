@@ -30,12 +30,16 @@ const Footer = () => {
             {/* Trụ sở chính */}
             <Col md={4}>
               <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '16px' }}>Trụ sở chính</div>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e0e0e0', fontSize: '14px' }}>
+                <li style={{ marginBottom: 6 }}>60 Nguyễn Văn Thủ, Phương Đa Kao, Quận 1, TP.Hồ Chí Minh</li>
+              </ul>
               <div className="contact-info">
-                <div style={{ fontSize: '14px' }}>
+                <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '16px', color: '#fff' }}>Thông tin liên hệ</div>
+                <div style={{ fontSize: '14px', color: '#e0e0e0' }}>
                   <FaEnvelope className="me-2" />
                   sales@thdcybersecurity.com
                 </div>
-                <div style={{ fontSize: '14px' }}>
+                <div style={{ fontSize: '14px', color: '#e0e0e0' }}>
                   <FaPhone className="me-2" />
                   0853 287 799
                 </div>
@@ -45,7 +49,7 @@ const Footer = () => {
             <Col md={8}>
               <div style={{ fontWeight: 600, marginBottom: 12, fontSize: '16px' }}>Chi nhánh</div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: '#e0e0e0', fontSize: '14px' }}>
-                <li style={{ marginBottom: 6 }}>Trụ sở chính: 60 Nguyễn Văn Thủ, Phương Đa Kao, Quận 1, TP.Hồ Chí Minh</li>
+                <li style={{ marginBottom: 6 }}>Hồ Chí Minh: Tòa nhà Ereka, 17 Hồ Bá Kiện, Phường 15, Quận 10, Tp.HCM, Việt Nam</li>
                 <li style={{ marginBottom: 6 }}>Gia Lai: Lô 10-1 Phù Đổng Hoa Lư, Phường Phù Đổng, Tp. Pleiku, Gia Lai, Việt Nam.</li>
                 <li style={{ marginBottom: 6 }}>Cần Thơ: Số 7A2 Đường Bùi Quang Trinh, KDC Phú An, Phường Phú Thứ, Quận Cái Răng, Tp. Cần Thơ, Việt Nam.</li>
                 <li>Hà Nội: Tầng 8, Tòa nhà AC, Số 3, Ngõ 78 Duy Tân, Cầu Giấy, Tp. Hà Nội, Việt Nam.</li>

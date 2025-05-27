@@ -66,51 +66,83 @@ const Home = () => {
 
   return (
     <div className="home" style={{ overflow: 'hidden', width: '100%', maxWidth: '100vw' }}>
-      {/* Hero Section - Static Content */}
-      <section
-        className="hero py-5"
+    {/* Hero Section */}
+    <section
+      className="hero py-5"
+      style={{
+        position: 'relative',
+        backgroundImage: 'url("/images/logodo.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        maxHeight: '600px',
+        width: '100%',
+        maxWidth: '100vw',
+        overflow: 'hidden'
+      }}
+    >
+      {/* Gradient overlay chỉ bên trái */}
+      <div
         style={{
-          backgroundImage: 'url("/images/logodo.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          maxHeight: '600px',
-          width: '100%',
-          maxWidth: '100vw',
-          overflow: 'hidden'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '60%', // chỉ phủ bên trái
+          height: '100%',
+          background: 'linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.08) 100%)',
+          zIndex: 1
         }}
-      >
-        <Container fluid="lg">
-          <Row className="align-items-center mx-0" style={{ minHeight: '400px', maxHeight: '500px', paddingTop: '20px' }}>
-            <Col md={7} className="d-flex flex-column justify-content-center">
-              <div style={{ marginTop: '-20px' }}>
-                <h1 className="display-4 mb-3 text-md-start text-center text-white" style={{ fontSize: 'var(--font-size-lg)' }}>
-                  An toàn không phải là tùy chọn - mà là ưu tiên.
-                </h1>
-                <p className="lead mb-3 text-md-start text-center text-white" style={{ fontSize: 'var(--font-size-base)' }}>
-                  Đừng để chỉ một lỗ hổng nhỏ khiến bạn trả giá bằng danh tiếng và tiền bạc. Chúng tôi mang đến giải pháp an ninh mạng toàn diện – phát hiện sớm, phản ứng nhanh, bảo vệ bền vững.Hãy để chúng tôi đồng hành và bảo vệ bạn khỏi mọi rủi ro ngay từ hôm nay.
-                </p>
-              </div>
-            </Col>
-            <Col md={5} className="text-center">
-              <img
-                src="/images/thdngang.jpg"
-                alt="logoheader"
-                className="img-fluid"
-                style={{ 
-                  width: '100%', 
-                  maxWidth: '400px',
-                  height: 'auto',
-                  border: '4px solid #fff',
-                  borderRadius: '20px',
-                  marginTop: 0,
-                  objectFit: 'contain'
+      />
+      <Container fluid="lg" style={{ position: 'relative', zIndex: 2 }}>
+        <Row className="align-items-center mx-0" style={{ minHeight: '400px', maxHeight: '500px', paddingTop: '20px' }}>
+          {/* Text Column - căn giữa dọc + text trái */}
+          <Col md={7} className="d-flex flex-column justify-content-center">
+            <div style={{ maxWidth: 700 }}>
+              <h1
+                className="display-4 mb-3 text-md-start text-center text-white"
+                style={{
+                  fontSize: 'var(--font-size-lg)',
+                  textShadow: '0 1.5px 4px #000'
                 }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section>
+              >
+                THD - Nơi bạn tạo nên giá trị khác biệt
+              </h1>
+              <p
+                className="lead mb-3 text-md-start text-center text-white"
+                style={{
+                  fontSize: 'var(--font-size-base)',
+                  textShadow: '0 1.5px 4px #000'
+                }}
+              >
+                Chào mừng bạn đến với THD, đơn vị tiên phong trong lĩnh vực an ninh mạng tại Việt Nam. 
+                <br /><br />
+                Với sứ mệnh bảo vệ thế giới số, THD cung cấp các giải pháp bảo mật toàn diện cho doanh nghiệp và tổ chức, là đối tác tin cậy của nhiều đơn vị trong các lĩnh vực: Chính phủ, Y tế, Giáo dục, Tài chính và Doanh nghiệp.
+                <br /><br />
+                Tại THD, bạn được làm việc cùng đội ngũ chuyên gia hàng đầu, phát triển bản thân trong môi trường sáng tạo, đổi mới và đầy cơ hội bứt phá. Chúng tôi tin rằng mỗi thành viên đều là nhân tố tạo nên sự khác biệt.
+              </p>
+            </div>
+          </Col>
+
+          {/* Image Column - căn giữa + tăng kích thước ảnh */}
+          <Col md={5} className="text-center">
+            <img
+              src="/images/thdngang.jpg"
+              alt="logoheader"
+              className="img-fluid"
+              style={{ 
+                width: '100%', 
+                maxWidth: '400px',
+                height: 'auto',
+                border: '4px solid #fff',
+                borderRadius: '20px',
+                marginTop: 0,
+                objectFit: 'contain'
+              }}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </section>
 
       {/* Search Bar - Static Content */}
       <div className="mb-5" style={{ marginTop: '20px', marginBottom: '20px' }}>
@@ -684,7 +716,7 @@ const Home = () => {
                     Nếu tôi chưa có nhiều kinh nghiệm trong ngành, tôi có cơ hội được tuyển không?
                   </Accordion.Header>
                   <Accordion.Body>
-                    [Nội dung câu trả lời]
+                  Tại THD, chúng tôi đánh giá cao tinh thần học hỏi, tư duy chủ động và khát khao phát triển. Dù bạn chưa có nhiều kinh nghiệm, chỉ cần bạn sẵn sàng tiếp thu và không ngừng cố gắng, THD luôn chào đón bạn – vì chúng tôi tin rằng tiềm năng và thái độ đúng là nền tảng của sự bứt phá.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1" className="border-0">
@@ -692,7 +724,13 @@ const Home = () => {
                     Tôi cần chuẩn bị gì cho buổi phỏng vấn tại THD?
                   </Accordion.Header>
                   <Accordion.Body>
-                    [Nội dung câu trả lời]
+                  Để có buổi phỏng vấn hiệu quả, bạn nên:<br></br>
+                  <br></br>
+                  Tìm hiểu kỹ về THD, các sản phẩm, dịch vụ và định hướng phát triển của công ty.
+                  Xem lại yêu cầu công việc và chuẩn bị các ví dụ cụ thể về kinh nghiệm của bạn.
+                  Chuẩn bị câu trả lời cho các câu hỏi tình huống hoặc kỹ thuật có thể gặp.
+                  Đặt sẵn một vài câu hỏi cho nhà tuyển dụng – điều này thể hiện sự quan tâm của bạn.
+                  Ăn mặc lịch sự, tự tin và thoải mái khi bước vào buổi phỏng vấn.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2" className="border-0">
@@ -700,7 +738,7 @@ const Home = () => {
                     Thời gian thông báo kết quả phỏng vấn là bao lâu?
                   </Accordion.Header>
                   <Accordion.Body>
-                    [Nội dung câu trả lời]
+                  Kết quả phỏng vấn sẽ được THD thông báo trong vòng <b>3–4 ngày làm việc</b> kể từ ngày ứng viên hoàn thành buổi phỏng vấn. Trong một số trường hợp đặc biệt, thời gian này có thể thay đổi và bộ phận tuyển dụng sẽ chủ động liên hệ để cập nhật thông tin.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3" className="border-0">
@@ -708,7 +746,7 @@ const Home = () => {
                     Nếu trượt vòng phỏng vấn, tôi có thể ứng tuyển lại không?
                   </Accordion.Header>
                   <Accordion.Body>
-                    [Nội dung câu trả lời]
+                  Có. THD luôn chào đón những ứng viên có khát vọng phát triển và mong muốn đồng hành cùng công ty. Bạn có thể ứng tuyển lại sau <b>2 tháng</b> kể từ lần phỏng vấn gần nhất hoặc khi có vị trí phù hợp với năng lực và định hướng của bạn.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="4" className="border-0">
@@ -716,15 +754,7 @@ const Home = () => {
                     Phỏng vấn tại THD sẽ diễn ra trực tiếp hay trực tuyến?
                   </Accordion.Header>
                   <Accordion.Body>
-                    [Nội dung câu trả lời]
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="5" className="border-0">
-                  <Accordion.Header style={{ borderBottom: '1px solid #eee', fontWeight: 500 }}>
-                    Kết quả bài kiểm tra đánh giá năng lực sẽ ảnh hưởng bao nhiêu đến quyết định tuyển dụng?
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    [Nội dung câu trả lời]
+                  Tùy vào từng vị trí và tình hình thực tế, THD tổ chức phỏng vấn <b>trực tiếp tại văn phòng</b> hoặc <b>trực tuyến qua các nền tảng như Google Meet, Zoom...</b> Mọi thông tin chi tiết sẽ được thông báo cụ thể trong thư mời phỏng vấn.
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
