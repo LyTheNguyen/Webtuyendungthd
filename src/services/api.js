@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:1337/api';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:1337/api';
 
 // Mock data for fallback if API fails
 const MOCK_JOBS = {

@@ -13,7 +13,7 @@ import { fetchJobs } from '../services/api';
 import jobData from '../data/jobs.json';
 
 // Configure axios defaults
-const API_URL = 'http://localhost:1337';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:1337';
 const API_TOKEN = '82e1467e76ede38d2ab2512f13ddcbe6208e554ccca3e50d16519132df4a6b793522932fd63875a22b8385259b4d100fa6df1b91f888385661cb27d7c857d8889a3ee0c0a1487882ae1fc97d0f35b6ba71b23a06c093ab035cb343cbc43f6be86ac599309306fae308eb0c89a98f20c4f0c1c98f50a31bce323f211d321c3c12';
 
 // Create axios instance with default config
